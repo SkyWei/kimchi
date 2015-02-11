@@ -21,7 +21,7 @@
 }
 
 .grid .header {
-    padding-bottom: 1px;
+    padding-bottom: 3px;
     border-bottom: solid 2px #ededed;
 }
 
@@ -39,11 +39,6 @@
     cursor: pointer;
 }
 
-.grid .header > span:first-child,
-.grid .body .row > span:first-child {
-    padding-left: 10px;
-}
-
 .grid .body .row {
     height: 46px;
     line-height: 46px;
@@ -55,9 +50,9 @@
 }
 
 .grid .body .odd {
-    background-color: #fcfcfc;
+    background-color: #ffffff;
 }
 
 .grid .body .even {
-    background-color: #ffffff;
+    background-color: #f9f9f9;
 }

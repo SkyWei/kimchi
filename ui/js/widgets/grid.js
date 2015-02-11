@@ -64,17 +64,19 @@ $.widget("kimchi.grid", {
             $('.icon-angle-down', columnCell).removeClass('icon-angle-down').addClass('icon-down-dir');
         }
         var container = $(this.element.children().get(1));
-        var keys = [], map = {};
+        var nodes = [];
         container.children().each(function(){
-            var key = $($(this).children().get(column)).attr('val');
-            keys.push(key);
-            map[key] = $(this);
+            nodes.push($(this));
         });
-        keys.sort();
-        if(!assending) keys.reverse();
+        nodes.sort(function(a, b){
+            aVal = $(a.children().get(column)).attr('val');
+            bVal = $(b.children().get(column)).attr('val');
+            return aVal.localeCompare(bVal);
+        });
+        if(!assending) nodes.reverse();
         container.empty();
-        for(var i=0;i<keys.length;i++){
-            container.append(map[keys[i]]);
+        for(var i=0;i<nodes.length;i++){
+            container.append(nodes[i]);
         }
         this._setRowBackgroud();
     },
@@ -84,13 +86,21 @@ $.widget("kimchi.grid", {
         container.children().each(function(){
             var hide = true;
             $(this).children().each(function(){
-                if($(this).attr('val').toLowerCase().indexOf(keyword)!=-1){
+                if($(this).attr('val')&&$(this).attr('val').toLowerCase().indexOf(keyword)!=-1){
                     hide = false;
                     return false;
                 }
             });
             $(this).css('display', hide?'none':'');
         });
+        this._setRowBackgroud();
+    },
+    addRow: function(rowNode){
+        $(rowNode).addClass('row');
+        this._setRowBackgroud();
+    },
+    deleteRow: function(rowNode){
+        $(rowNode).remove();
         this._setRowBackgroud();
     },
     _destroy: function() {
