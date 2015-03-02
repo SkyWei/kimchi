@@ -458,6 +458,33 @@
     cursor: default;
 }
 
+.btn-normal-1 {
+    display: inline-block;
+    height: 38px;
+    margin: 9px 3px;
+    vertical-align: top;
+    background: #008abf;
+    line-height: 38px;
+    padding: 0 20px;
+    color: #FFFFFF;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btn-normal-1 span {
+    font-family: 'Helvetica Neue', Helvetica, Arial;
+    font-weight: lighter;
+}
+
+.btn-normal-1:not([disabled]):active {
+    background: #999999;
+}
+
+.btn-normal-1[disabled] {
+    background: #999999;
+    cursor: default;
+}
+
 .btn-group {
     float: left;
     padding: 0 10px;
