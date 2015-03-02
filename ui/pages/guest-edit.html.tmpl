@@ -1,7 +1,7 @@
 #*
  * Project Kimchi
  *
- * Copyright IBM, Corp. 2013-2014
+ * Copyright IBM, Corp. 2013-2015
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,8 +23,7 @@
 
 <div id="guest-edit-window" class="window">
     <header>
-        <h1 class="title">$_("Edit Guest")</h1>
-        <div class="close">X</div>
+        <h1 class="title h1 grey">$_("Edit Guest")</h1>
     </header>
     <div class="content">
         <div id="guest-edit-tabs">
@@ -188,6 +187,9 @@
         <div id="action-button-container" class="btn-group hidden">
             <button id="guest-edit-button-save" class="btn-normal">
                 <span class="text">$_("Save")</span>
+            </button>
+            <button id="guest-edit-button-save" class="btn-normal close">
+                <span class="text">$_("Cancel")</span>
             </button>
         </div>
     </footer>
