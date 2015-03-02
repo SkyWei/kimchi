@@ -1,7 +1,7 @@
 #*
  * Project Kimchi
  *
- * Copyright IBM, Corp. 2014
+ * Copyright IBM, Corp. 2014-2015
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,8 +24,7 @@
 <div id="sp-add-volume-window" class="window">
     <form id="form-sp-add-volume">
         <header class="window-header">
-            <h1 class="title">$_("Add a Volume to Storage Pool")</h1>
-            <div class="close">X</div>
+            <h1 class="title h1 grey">$_("Add a Volume to Storage Pool")</h1>
         </header>
         <section>
             <div class="content">
@@ -37,12 +36,12 @@
                         </label>
                     </h2>
                     <div class="field">
-                        <p class="text-help">
-                            $_("Enter the remote URL here.")
-                        </p>
                         <div class="textbox-wrapper">
                             <input type="text" id="volume-remote-url" class="text volume-input download" name="volumeRemoteURL" />
                         </div>
+                        <p class="text-help">
+                            $_("Enter the remote URL here.")
+                        </p>
                     </div>
                 </div>
                 <div class="form-section">
@@ -68,6 +67,7 @@
                 <button type="submit" id="sp-add-volume-button" class="btn-normal" disabled="disabled">
                     <span class="text">$_("Add")</span>
                 </button>
+                <button type="button" class="btn-normal close"><span class="text">$_("Cancel")</span></button>
             </div>
         </footer>
     </form>
