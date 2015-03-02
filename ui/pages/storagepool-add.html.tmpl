@@ -32,8 +32,9 @@
                 <section class="form-section">
                     <h2>1. $_("Storage Pool Name")</h2>
                     <div class="field">
-                        <input id="poolId" required="required" type="text" class="text storage-base-input-width" name="name">
-                        <p class="text-help">
+                        <input id="poolId" required="required" type="text" class="text storage-base-input-width" name="name"><br>
+                        <div class="icon-info-circled light-grey c1 help-inline"></div>
+                        <p class="text-help help-inline">
                             $_("The name used to identify the storage pools, and it should not be empty.")
                         </p>
                     </div>
@@ -55,10 +56,12 @@
                     <section class="form-section">
                         <h2>3. $_("Storage Path")</h2>
                         <div class="field">
-                            <input id="pathId" type="text" class="text storage-base-input-width">
-                            <p class="text-help">
-                                $_("The path of the Storage Pool. Each Storage Pool must have a unique path.")</p>
-                            <p class="text-help">
+                            <input id="pathId" type="text" class="text storage-base-input-width"><br>
+                            <div class="icon-info-circled light-grey c1 help-inline"></div>
+                            <p class="text-help help-inline">
+                                $_("The path of the Storage Pool. Each Storage Pool must have a unique path.")</p><br>
+                            <div class="icon-info-circled light-grey c1 help-inline"></div>
+                            <p class="text-help help-inline">
                                 $_("Kimchi will try to create the directory when it does not already exist in your system.")</p>
                         </div>
                         <div class="clear"></div>
@@ -74,8 +77,9 @@
                                     <ul id="nfs-server-used">
                                     </ul>
                                 </div>
-                            </div>
-                            <p class="text-help">
+                            </div><br>
+                            <div class="icon-info-circled light-grey c1 help-inline"></div>
+                            <p class="text-help help-inline">
                                 $_("NFS server IP or hostname. It can be input or chosen from history.")</p>
                         </div>
                     </section>
@@ -88,8 +92,9 @@
                                     <ul id="nfs-server-target">
                                     </ul>
                                 </div>
-                            </div>
-                            <p class="text-help">$_("The NFS exported path on NFS server.")</p>
+                            </div><br>
+                            <div class="icon-info-circled light-grey c1 help-inline"></div>
+                            <p class="text-help help-inline">$_("The NFS exported path on NFS server.")</p>
                         </div>
                     </section>
                 </div>
@@ -97,7 +102,8 @@
                     <section class="form-section storageType">
                         <h2>3. $_("Device path")</h2>
                         <div class="host-partition">
-                            <p class="text-help">
+                            <div class="icon-info-circled light-grey c1 help-inline"></div>
+                            <p class="text-help help-inline">
                                 $_("Looking for available partitions ...")
                                 <img src = "../images/theme-default/loading.gif" />
                             </p>
@@ -112,8 +118,9 @@
                                 <input id="iscsiserverId" type="text" placeholder="$_("Server")">
                                 <div class="popover"><ul class="option select-list"></ul></div>
                             </span>
-                            <input id="iscsiportId" placeholder="$_("Port")" type="text" class="text storage-port-width" maxlength="4">
-                            <p class="text-help">
+                            <input id="iscsiportId" placeholder="$_("Port")" type="text" class="text storage-port-width" maxlength="4"><br>
+                            <div class="icon-info-circled light-grey c1 help-inline"></div>
+                            <p class="text-help help-inline">
                                 $_("iSCSI server IP or hostname. It should not be empty.")</p>
                         </div>
                     </section>
@@ -123,8 +130,9 @@
                             <span class="filter-select popable" id="iSCSITarget">
                                 <input id="iscsiTargetId" type="text">
                                 <div class="popover"><ul class="option select-list"></ul></div>
-                            </span>
-                            <p class="text-help">$_("The iSCSI target on iSCSI server")</p>
+                            </span><br>
+                            <div class="icon-info-circled light-grey c1 help-inline"></div>
+                            <p class="text-help help-inline">$_("The iSCSI target on iSCSI server")</p>
                         </div>
                     </section>
                     <section class="form-section">
