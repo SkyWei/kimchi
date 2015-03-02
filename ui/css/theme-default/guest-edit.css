@@ -21,6 +21,14 @@
     width: 820px;
 }
 
+#guest-edit-window #action-button-container {
+    padding-right: 0;
+}
+
+#guest-edit-window #guest-edit-button-cancel {
+    margin-left: 10px;
+}
+
 #guest-edit-tabs {
     background: transparent;
     border: none;
