@@ -1,7 +1,7 @@
 /*
  * Project Kimchi
  *
- * Copyright IBM, Corp. 2013-2014
+ * Copyright IBM, Corp. 2013-2015
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -432,38 +432,29 @@
     height: 38px;
     margin: 9px 3px;
     vertical-align: top;
-    background: #06F;
+    background: #FFFFFF;
     line-height: 38px;
     padding: 0 20px;
-    color: #EEE;
-    border-radius: 8px;
+    color: #444444;
     font-size: 13px;
+    cursor: pointer;
 }
 
 .btn-normal:not([disabled]):hover {
-    background: #04D;
+    background: #EEEEEE;
 }
 
 .btn-normal:not([disabled]):active {
-    box-shadow: -1px -1px 1px #eee, 1px 1px 1px #ccc, 2px 2px 2px #ccc inset,
-                -2px -2px 2px #aaa inset;
-    background: -moz-linear-gradient(top, #04d 0%, #06f 100%);
-    background: -webkit-gradient(linear, left top, left bottom,
-                color-stop(0%, #04d), color-stop(100%, #06f));
-    background: -webkit-linear-gradient(top, #04d 0%, #ff3019 100%);
-    background: -o-linear-gradient(top, #04d 0%, #06f 100%);
-    background: -ms-linear-gradient(top, #04d 0%, #06f 100%);
-    background: linear-gradient(to bottom, #04d 0%, #06f 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#04d',
-            endColorstr='#06f', GradientType=0);
+    background: #999999;
 }
 
 .btn-normal[disabled] {
-    background-color: silver;
+    color: #CCCCCC;
+    cursor: default;
 }
 
 .btn-group {
-    float: right;
+    float: left;
     padding: 0 10px;
 }
 
